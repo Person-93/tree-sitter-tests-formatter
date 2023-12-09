@@ -1,0 +1,25 @@
+[package]
+name = "tree-sitter-tests-formatter"
+version = "0.1.0"
+description = "tree-sitter tests file formatter"
+keywords = ["tree-sitter", "formatter", "tests"]
+categories = ["development-tools"]
+repository = "https://github.com/Sarrus1/tree-sitter-tests-formatter"
+edition = "2021"
+license = "MIT"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "tsfmt"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.4.11", features = ["derive"] }
+lazy_static = "1.4.0"
+regex = "^1.10.2"
+tempfile = "3.8.1"
+
+[dev-dependencies]
+insta = { version = "1.28.0", features = ["glob", "redactions"] }

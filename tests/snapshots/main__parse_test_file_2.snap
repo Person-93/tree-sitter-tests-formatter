@@ -1,0 +1,17 @@
+---
+source: tests/main.rs
+assertion_line: 46
+expression: test_fixture(fixture)
+---
+======
+test 1
+======
+
+void
+
+---
+
+(source_file
+  (function_declaration)
+)
+
