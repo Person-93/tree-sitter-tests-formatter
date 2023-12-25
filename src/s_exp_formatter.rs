@@ -92,7 +92,7 @@ pub fn format_s_expr(input: &str) -> String {
             write!(formatted, " ").unwrap();
             continue;
         }
-        if tokens[i + 1] == ")" {
+        if tokens.get(i + 1) == Some(&")".to_string()) {
             write!(formatted, "{}", token).unwrap();
             continue;
         }

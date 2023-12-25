@@ -46,8 +46,8 @@ impl TestFile {
             None,
         }
         lazy_static! {
-            static ref RE_FIXTURE_NAME_SEP: Regex = Regex::new(r"^===").unwrap();
-            static ref RE_FIXTURE_SEP: Regex = Regex::new(r"^---$").unwrap();
+            static ref RE_FIXTURE_NAME_SEP: Regex = Regex::new(r"^====*$").unwrap();
+            static ref RE_FIXTURE_SEP: Regex = Regex::new(r"^----*$").unwrap();
         }
         let mut state: State = State::None;
         let mut fixtures = Vec::new();
