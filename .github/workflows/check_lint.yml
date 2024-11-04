@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - tracking
 
 
 name: Check and Lint
